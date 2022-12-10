@@ -1,0 +1,20 @@
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("На вход принимаются координаты двух точек и находится расстояние между ними в 3D пространстве");
+Console.Write("Введите координату xa, ");
+int xa = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите координату xb, ");
+int xb = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите координату ya, ");
+int ya = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите координату yb, ");
+int yb = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите координату za, ");
+int za = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите координату zb, ");
+int zb = Convert.ToInt32(Console.ReadLine());
+int A = (xb - xa);
+int B = (yb - ya);
+int C = (zb - za);
+double length = Math.Sqrt(A * A + B * B + C * C);
+double x = Math.Round(length, 2);
+Console.WriteLine($"Длинна отрезка {x}");
