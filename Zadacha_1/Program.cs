@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.Write("Введите пятизначное число, ");
 int N = Convert.ToInt32(Console.ReadLine());
-if (N >= 10000 & N <= 10000)
+if ((N >= 10000) & (N <= 100000))
 {
     int b = N / 10000;
     int c = N % 10;
